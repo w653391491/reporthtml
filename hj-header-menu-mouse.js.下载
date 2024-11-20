@@ -1,0 +1,11 @@
+$(document).ready(function($) {
+    $('.have-sub-menu').hover(
+        function(){
+            $(this).find('.sub-menu-container').show()
+            $(this).find('.sub-menu-container').css('z-index', 99)
+        },
+        function(){
+            $(this).find('.sub-menu-container').hide()
+            $(this).find('.sub-menu-container').css('z-index', -99)
+        })
+})
